@@ -20,11 +20,11 @@
       "dom"
     ],
     "paths": {
-      "ngx-rrule": [
-        "dist/ngx-rrule"
+      "ottomate-ngx-rrule": [
+        "dist/ottomate-ngx-rrule"
       ],
-      "ngx-rrule/*": [
-        "dist/ngx-rrule/*"
+      "ottomate-ngx-rrule/*": [
+        "dist/ottomate-ngx-rrule/*"
       ]
     }
   }

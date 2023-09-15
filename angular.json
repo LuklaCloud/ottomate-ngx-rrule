@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-rrule": {
-      "root": "projects/ngx-rrule",
-      "sourceRoot": "projects/ngx-rrule/src",
+    "ottomate-ngx-rrule": {
+      "root": "projects/ottomate-ngx-rrule",
+      "sourceRoot": "projects/ottomate-ngx-rrule/src",
       "projectType": "library",
-      "prefix": "ngx",
+      "prefix": "ottomate-ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-rrule/tsconfig.lib.json",
-            "project": "projects/ngx-rrule/ng-package.json"
+            "tsConfig": "projects/ottomate-ngx-rrule/tsconfig.lib.json",
+            "project": "projects/ottomate-ngx-rrule/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-rrule/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ottomate-ngx-rrule/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-rrule/src/test.ts",
-            "tsConfig": "projects/ngx-rrule/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-rrule/karma.conf.js"
+            "main": "projects/ottomate-ngx-rrule/src/test.ts",
+            "tsConfig": "projects/ottomate-ngx-rrule/tsconfig.spec.json",
+            "karmaConfig": "projects/ottomate-ngx-rrule/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-rrule/tsconfig.lib.json",
-              "projects/ngx-rrule/tsconfig.spec.json"
+              "projects/ottomate-ngx-rrule/tsconfig.lib.json",
+              "projects/ottomate-ngx-rrule/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -64,7 +64,8 @@
               "projects/tester/src/assets"
             ],
             "styles": [
-              "projects/tester/src/styles.scss"
+              "projects/tester/src/styles.scss",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
             ],
             "scripts": []
           },
