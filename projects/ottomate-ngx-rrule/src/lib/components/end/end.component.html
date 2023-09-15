@@ -1,0 +1,23 @@
+<form [formGroup]="form">
+  <div class="form-group row align-items-center">
+    <div class="col-3">
+      <label>Ends</label>
+    </div>
+    <div class="col-auto d-flex align-items-center">
+      <select formControlName="mode" class="form-control">
+        <option value="Never">Never</option>
+        <option value="After">After</option>
+        <option value="On date">On date</option>
+      </select>
+      <div *ngIf="form.value.mode === 'After'">
+        <div class="form-group d-flex align-items-center">
+          <input formControlName="after" aria-label="End after" class="form-control ms-2" />
+          <label class="ms-1">occurrences</label>
+        </div>
+      </div>
+      <input *ngIf="form.value.mode == 'On date'" class="form-control ms-2" formControlName="endAt"
+        placeholder="yyyy-mm-dd" bsDatepicker>
+    </div>
+
+  </div>
+</form>

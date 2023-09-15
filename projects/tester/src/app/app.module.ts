@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LuklaNgxRruleModule } from 'ngx-rrule';
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { OttomateNgxRruleModule } from 'ottomate-ngx-rrule';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    LuklaNgxRruleModule
+    OttomateNgxRruleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

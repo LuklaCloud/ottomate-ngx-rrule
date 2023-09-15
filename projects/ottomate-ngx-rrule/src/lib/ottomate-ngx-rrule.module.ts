@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LuklaNgxRruleComponent } from './lukla-ngx-rrule.component';
+import { OttomateNgxRruleComponent } from './ottomate-ngx-rrule.component';
 import { StartComponent } from './components/start/start.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EndComponent } from './components/end/end.component';
@@ -11,13 +11,21 @@ import { YearlyComponent } from './components/repeat/yearly/yearly.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
-  declarations: [LuklaNgxRruleComponent, StartComponent, EndComponent, RepeatComponent, WeeklyComponent, MonthlyComponent, YearlyComponent],
+  declarations: [
+    OttomateNgxRruleComponent, 
+    StartComponent, 
+    EndComponent, 
+    RepeatComponent, 
+    WeeklyComponent, 
+    MonthlyComponent, 
+    YearlyComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     BsDatepickerModule.forRoot()
   ],
-  exports: [LuklaNgxRruleComponent]
+  exports: [OttomateNgxRruleComponent]
 })
-export class LuklaNgxRruleModule { }
+export class OttomateNgxRruleModule { }

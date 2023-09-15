@@ -3,7 +3,7 @@ import {computeRRule} from './util/computeRRule/toString/computeRRule';
 @Injectable({
   providedIn: 'root'
 })
-export class LuklaNgxRruleService {
+export class OttomateNgxRruleService {
   constructor() {}
   computeRRule(params) {
     return computeRRule(params);

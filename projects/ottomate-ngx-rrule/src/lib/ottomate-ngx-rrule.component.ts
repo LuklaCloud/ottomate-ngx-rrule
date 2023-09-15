@@ -1,16 +1,16 @@
 import {Component, forwardRef, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { LuklaNgxRruleService } from './lukla-ngx-rrule.service';
+import { OttomateNgxRruleService } from './ottomate-ngx-rrule.service';
 import { computeRRule } from './util/computeRRule/fromString/computeRRule';
 import {formatDate, getDateParts} from './util/common';
 
 @Component({
-  selector: 'lukla-ngx-rrule',
-  templateUrl: './lukla-ngx-rrule.component.html',
-  styles: [],
-  providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => LuklaNgxRruleComponent), multi: true }]
+  selector: 'ottomate-ngx-rrule',
+  templateUrl: './ottomate-ngx-rrule.component.html',
+  styleUrls: ["./ottomate-ngx-rrule.component.scss"],
+  providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => OttomateNgxRruleComponent), multi: true }]
 })
-export class LuklaNgxRruleComponent implements OnInit, OnChanges, ControlValueAccessor {
+export class OttomateNgxRruleComponent implements OnInit, OnChanges, ControlValueAccessor {
   @Input() hideStart = false;
   @Input() hideEnd = false;
   @Input() startAt;
@@ -20,7 +20,7 @@ export class LuklaNgxRruleComponent implements OnInit, OnChanges, ControlValueAc
   public form: UntypedFormGroup;
   private propagateChange;
   constructor(private formBuilder: UntypedFormBuilder,
-    private service: LuklaNgxRruleService) { }
+    private service: OttomateNgxRruleService) { }
 
   ngOnInit() {
     const params: any = {

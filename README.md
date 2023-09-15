@@ -1,10 +1,10 @@
-# NgxRrule
+# OttomateNgxRrule
 > Recurrence rules generator form control for Angular
 
-> Inspired and partially forked from https://github.com/Fafruch/react-rrule-generator
+> Inspired and forked from https://github.com/kumar-muthu/ngx-rrule
 
 [![Alpha](https://img.shields.io/badge/status-alpha-yellow.svg)](Alpha)
-[![npm version](https://badge.fury.io/js/ngx-rrule.svg)](https://badge.fury.io/js/ngx-rrule)
+[![npm version](https://badge.fury.io/js/-ottomate-ngx-rrule.svg)](https://badge.fury.io/js/ottomate-ngx-rrule)
 [![LICENSE](https://img.shields.io/npm/l/express.svg)](LICENSE)
 
 ## Description
@@ -12,26 +12,25 @@
 This is [Angular](https://angular.io/) form control using [Bootstrap](https://github.com/twbs/bootstrap) styling. It's built with the help of a great [rrule.js](https://github.com/jakubroztocil/rrule) library.
 
 It also uses:
-* [moment](https://github.com/moment/moment)
-* [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview)
+* [ngx-bootstrap](https://valor-software.com/ngx-bootstra)
 
 ## Demo
-https://kumar-muthu.github.io/ngx-rrule/
+https://LuklaCloud.github.io/ottomate-ngx-rrule/
 
 ## Installation and Docs
 
 #### Install
 ```
- $ npm i ngx-rrule @ng-bootstrap/ng-bootstrap rrule bootstrap
+ $ npm i ottomate-ngx-rrule
 ```
 
-#### Import NgxRruleModule in your app:
+#### Import OttomateNgxRruleModule in your app:
 
 ```js
-import {NgxRruleModule} from 'ngx-rrule';
+import {OttomateNgxRruleModule} from 'ottomate-ngx-rrule';
 
 @NgModule({
-    imports: [NgxRruleModule]
+    imports: [OttomateNgxRruleModule]
 })
 export class AppModule {}
 ```
@@ -45,11 +44,11 @@ Optionally, this can be added to styles section of angular.json
 #### app.component.html
 ```html
 <form [formGroup]="myform">
-  <ngx-rrule formControlName="testRule"
+  <ottomate-ngx-rrule formControlName="testRule"
              [hideStart]="false"
              [hideEnd]="false"
              tz="America/New_York"
-             [frequency]="['Daily','Monthly','Weekly', 'Yearly']"></ngx-rrule>
+             [frequency]="['Daily','Monthly','Weekly', 'Yearly']"></ottomate-ngx-rrule>
 </form>
 ```
 
