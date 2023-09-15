@@ -10,9 +10,9 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^13.4.0",
-    "@angular/core": "^13.4.0",
-    "@angular/localize": "^13.4.0",
+    "@angular/common": "^14.3.0",
+    "@angular/core": "^14.3.0",
+    "@angular/localize": "^14.3.0",
     "ngx-bootstrap": "^9.0.0",
     "rrule": "^2.7.2"
   }
