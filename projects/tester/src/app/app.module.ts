@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxRruleModule } from 'ngx-rrule';
+import { LuklaNgxRruleModule } from 'ngx-rrule';
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
@@ -12,7 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxRruleModule
+    LuklaNgxRruleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
