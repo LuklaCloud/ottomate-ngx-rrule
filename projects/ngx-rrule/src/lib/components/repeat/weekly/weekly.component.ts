@@ -1,7 +1,6 @@
 import {Component, OnInit, Output, Input, forwardRef, EventEmitter, OnChanges, SimpleChanges} from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
-import * as _ from 'lodash';
 
 @Component({
   selector: 'ngx-weekly',
@@ -57,7 +56,7 @@ export class WeeklyComponent implements OnInit, ControlValueAccessor {
       };
 
       value.interval = this.weeklyForm.value.weeklyInterval;
-      value.days = _.omit(this.weeklyForm.value, ['weeklyInterval']);
+      value.days = (({ weeklyInterval, ...rest }) => rest)(this.weeklyForm.value);
       this.propagateChange(value);
       this.onChange.emit();
     }
