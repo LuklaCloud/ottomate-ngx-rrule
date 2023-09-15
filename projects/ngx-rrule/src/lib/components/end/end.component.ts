@@ -1,7 +1,6 @@
 import {Component, OnInit, Output, forwardRef, EventEmitter} from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
-import {getDateParts} from "../../util/common";
 
 @Component({
   selector: 'ngx-end',

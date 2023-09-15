@@ -1,11 +1,11 @@
 {
-  "name": "ngx-rrule",
+  "name": "lukla-ngx-rrule",
   "version": "0.13.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kumar-muthu/ngx-rrule.git"
+    "url": "https://github.com/LuklaCloud/lukla-ngx-rrule"
   },
-  "homepage": "https://github.com/kumar-muthu/ngx-rrule",
+  "homepage": "https://github.com/LuklaCloud/lukla-ngx-rrule",
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -13,10 +13,7 @@
     "@angular/common": "^13.4.0",
     "@angular/core": "^13.4.0",
     "@angular/localize": "^13.4.0",
-    "@ng-bootstrap/ng-bootstrap": "^12.1.2",
+    "ngx-bootstrap": "^9.0.0",
     "rrule": "^2.7.2"
-  },
-  "dependencies": {
-    "tslib": "^2.0.0"
   }
 }
