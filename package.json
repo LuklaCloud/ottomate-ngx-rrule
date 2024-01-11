@@ -22,8 +22,8 @@
     "@angular/router": "^15.2.10",
     "bootstrap": "^5.2.0",
     "moment": "^2.27.0",
-    "ngx-bootstrap": "^9.0.0",
-    "rrule": "^2.7.2",
+    "ngx-bootstrap": "^10.3.0",
+    "rrule": "^2.8.1",
     "rxjs": "~6.5.4",
     "zone.js": "~0.11.8"
   },
