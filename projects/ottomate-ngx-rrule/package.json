@@ -1,6 +1,6 @@
 {
   "name": "ottomate-ngx-rrule",
-  "version": "1.15.2",
+  "version": "1.16.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/LuklaCloud/ottomate-ngx-rrule"
@@ -10,10 +10,10 @@
   "author": "OttoMate",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^15.2.10",
-    "@angular/core": "^15.2.10",
-    "@angular/localize": "^15.2.10",
-    "ngx-bootstrap": "^10.3.0",
+    "@angular/common": "^16.2.12",
+    "@angular/core": "^16.2.12",
+    "@angular/localize": "^16.2.12",
+    "ngx-bootstrap": "^11.0.2",
     "rrule": "^2.8.1"
   }
 }
