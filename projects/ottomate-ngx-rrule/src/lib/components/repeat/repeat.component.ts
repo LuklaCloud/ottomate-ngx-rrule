@@ -3,6 +3,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR, UntypedFormBuilder, UntypedFor
 
 @Component({
   selector: 'ngx-repeat',
+  standalone: false,
   templateUrl: './repeat.component.html',
   styleUrls: ['./repeat.component.css'],
   providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => RepeatComponent), multi: true }]

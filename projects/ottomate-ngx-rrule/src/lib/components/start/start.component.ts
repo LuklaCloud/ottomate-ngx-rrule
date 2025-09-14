@@ -5,6 +5,7 @@ import {formatDate} from "../../util/common";
 
 @Component({
   selector: 'ngx-start',
+  standalone: false,
   templateUrl: './start.component.html',
   styleUrls: ['./start.component.css'],
   providers: [{provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => StartComponent), multi: true}]

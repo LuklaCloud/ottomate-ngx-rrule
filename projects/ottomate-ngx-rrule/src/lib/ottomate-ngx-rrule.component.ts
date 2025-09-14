@@ -6,6 +6,7 @@ import {formatDate, getDateParts} from './util/common';
 
 @Component({
   selector: 'ottomate-ngx-rrule',
+  standalone: false,
   templateUrl: './ottomate-ngx-rrule.component.html',
   styleUrls: ["./ottomate-ngx-rrule.component.scss"],
   providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => OttomateNgxRruleComponent), multi: true }]

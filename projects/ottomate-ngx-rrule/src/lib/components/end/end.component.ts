@@ -4,6 +4,7 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 
 @Component({
   selector: 'ngx-end',
+  standalone: false,
   templateUrl: './end.component.html',
   styleUrls: ['./end.component.css'],
   providers: [{provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => EndComponent), multi: true}]
